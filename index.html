@@ -1,0 +1,43 @@
+<!doctype html> 
+<html>
+	<head>
+		<title>GA FEWD MVC Assignment</title>
+		<link rel="stylesheet" type="text/css" href="css/mvc-app.css">
+		<script src="js/json2.js"></script>
+		<script src="js/underscore-min.js"></script>
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/backbone.js"></script>
+		<script src="js/backbone.localStorage.js"></script>
+		<script src="js/utility.js"></script>
+		<script src="js/mvc-app.js"></script>
+	</head>
+	<body>
+		
+		<h3>GA FEWD MVC Assignment - Part 2</h3> 
+		<h4>To Do List (backbone.js)</h4>
+		
+		<div id="container">
+
+			<p class="click-history-subtitle">list saved in browser HTML5 local storage</p>
+
+			<form>
+				<input id="new-task"/>
+				<input type="submit" value="save"/> 
+			</form>
+		
+			<div id="tasks"></div>
+
+		</div> <!--container -->
+		
+		<script type="text/template" id="task-template">
+				 <label for=<%= id %> class=" <%= (complete === 'yes' ? 'task-checkbox-complete' : '') %>">
+					<input type="checkbox" id=<%= id %>
+			 							class="task-checkbox"
+										<%= (complete === 'yes' ? 'checked=checked' : '') %> >
+					<%= description %>
+				  </label>
+					<span class="task-timestamp"><%= timeText %></span>
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+	font-family: Helvetica, Arial, sans serif;
+}
+
+body {
+	text-align: center;
+} 
+
+#tasks {
+	margin-top: 20px; 
+	text-align: left;
+}
+
+#container {
+	width: 20%;
+	min-width: 300px;
+	margin: auto; 	 
+}
+
+.task-timestamp {
+	color: green;
+	padding-left: 10px;
+	font-size: x-small;
+	text-decoration: none; 
+	float: right;
+	padding-top: 2px;
+} 
+
+.task-checkbox-complete {
+	text-decoration: line-through;
+}
+
+label {
+	width: 100px;
+}
+
+h3 {
+	margin-bottom: 6px;
+}
+
+h4 {
+	margin: 10px;
+} 
+
+p.click-history-title {
+	font-weight: bold;
+	margin-bottom:4px;
+}
+
+p.click-history-subtitle {
+	font-size: small;
+	color:gray;
+	margin-top: 4px;
+}
